@@ -11,6 +11,6 @@ function App() {
       <CvTab name="Hobbies" />
     </ul>
   );
-}s;
+}
 
 export { App };
