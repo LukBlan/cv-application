@@ -6,12 +6,13 @@
 }
 
 .download-file-name {
+  width: 98%;
+  padding: 1%;
   overflow: hidden;
   appearance: none;
   border: none;
   color: white;
   background: transparent;
-  padding: 3px;
   margin: auto;
   text-align: center;
   font-weight: bold;

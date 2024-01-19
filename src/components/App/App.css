@@ -1,0 +1,19 @@
+main {
+  overflow: auto;
+}
+
+.preview-section {
+  background-color: blue;
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .preview-section {
+    display: block;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
