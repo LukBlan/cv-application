@@ -1,11 +1,15 @@
 import { Form } from '../Form/Form';
 import { TabSection } from '../TabSection/TabSection';
+import './App.css';
 
 function App() {
   return (
     <>
       <Form />
-      <TabSection />
+      <main>
+        <TabSection />
+        <div className="preview-section">Example</div>
+      </main>
     </>
   );
 }
