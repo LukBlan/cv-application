@@ -1,0 +1,25 @@
+.cv-tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.cv-tab-name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1.2rem;
+  font-family: monospace, sans-serif;
+}
+
+.cv-button {
+  appearance: none;
+  padding: 5px 10px;
+  background: white;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 6px;
+  cursor: pointer;
+}
