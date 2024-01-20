@@ -7,7 +7,39 @@ main {
   display: none;
 }
 
-@media (min-width: 769px) {
+.show-preview-button {
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  position: absolute;
+  right: 4%;
+  bottom: 2%;
+  border-radius: 100%;
+  padding: 10px 3px;
+  background-color: blueviolet;
+}
+
+.show-preview-button:hover {
+  background-color: #a955f7;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .show-preview-button.hide ~ main > .preview-section {
+    display: block;
+    position: absolute;
+    animation: showFromLeft 0.5s forwards;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: 768px) {
   .preview-section {
     display: block;
   }
@@ -15,5 +47,19 @@ main {
   main {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
+  }
+
+  .show-preview-button {
+    display: none;
+  }
+}
+
+@keyframes showFromLeft {
+  0% {
+    transform: translateX(200%);
+  }
+
+  100% {
+    transform: translateX(0%);
   }
 }
