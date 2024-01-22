@@ -1,7 +1,8 @@
+import { useState } from 'react';
 import { Form } from '../Form/Form';
 import { TabSection } from '../TabSection/TabSection';
+import { PreviewSection } from '../PreviewSection/PreviewSection';
 import './App.css';
-import { useState } from 'react';
 
 function App() {
   const [hiddenButton, setHidden] = useState(false);
@@ -13,11 +14,11 @@ function App() {
     <>
       <Form />
       <button className={buttonClass} onClick={toggleHide}>
-        Show
+        <img src="/img/preview.svg" alt="" />
       </button>
       <main>
         <TabSection />
-        <div className="preview-section">Example</div>
+        <PreviewSection toggleHide={toggleHide} />
       </main>
 
     </>

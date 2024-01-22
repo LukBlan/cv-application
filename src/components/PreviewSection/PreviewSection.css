@@ -1,0 +1,9 @@
+.preview-navbar {
+  display: flex;
+  background-color: rgba(0,0,0,0.9);
+  padding: 10px;
+  justify-content: space-between;
+  color: white;
+  font-size: 1.1rem;
+  align-items: center;
+}
