@@ -4,7 +4,7 @@ function PreviewSection({ toggleHide }) {
   return (
     <section className="preview-section">
       <nav className="preview-navbar">
-        <button onClick={toggleHide}>
+        <button className="return-button" onClick={toggleHide}>
           <img src="/img/left-arrow.svg" alt="" />
         </button>
         <p>Preview</p>
