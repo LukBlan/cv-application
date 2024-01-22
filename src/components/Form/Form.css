@@ -3,6 +3,7 @@
   background-color: rgba(0,0,0,0.9);
   padding: 10px;
   justify-content: space-around;
+  align-items: center;
 }
 
 .download-file-name {
