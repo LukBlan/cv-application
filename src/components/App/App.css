@@ -8,19 +8,17 @@ main {
 }
 
 .show-preview-button {
-  cursor: pointer;
-  appearance: none;
-  border: none;
   position: absolute;
   right: 4%;
   bottom: 2%;
   border-radius: 100%;
-  padding: 10px 3px;
-  background-color: blueviolet;
+  padding: 10px 10px;
+  background-color: var(--option-button-color);
 }
 
-.show-preview-button:hover {
-  background-color: #a955f7;
+.download-button {
+  border-radius: 5px;
+  background-color: var(--option-button-color);
 }
 
 .hide {
@@ -42,6 +40,10 @@ main {
 @media (min-width: 768px) {
   .preview-section {
     display: block;
+  }
+
+  .preview-navbar {
+    display: none;
   }
 
   main {
