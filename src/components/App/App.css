@@ -3,7 +3,7 @@ main {
 }
 
 .preview-section {
-  background-color: blue;
+  background-color: white;
   display: none;
 }
 
@@ -19,6 +19,7 @@ main {
 .download-button {
   border-radius: 5px;
   background-color: var(--option-button-color);
+  padding: 2px;
 }
 
 .hide {
