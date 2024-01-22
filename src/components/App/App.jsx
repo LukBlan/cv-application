@@ -8,7 +8,7 @@ import { ImageButton } from '../ImageButton/ImageButton';
 function App() {
   const [hiddenButton, setHidden] = useState(false);
   const buttonClass = `show-preview-button ${hiddenButton ? 'hide' : ''}`;
-
+  const cvSections = ['Person Info', 'Education', 'Employment', 'Skills', 'Languages'];
   const toggleHide = () => setHidden(!hiddenButton);
 
   return (
@@ -16,7 +16,7 @@ function App() {
       <Form />
       <ImageButton className={buttonClass} onClick={toggleHide} src="/img/preview.svg" alt="" />
       <main>
-        <TabSection />
+        <TabSection cvSections={cvSections} />
         <PreviewSection toggleHide={toggleHide} />
       </main>
 
