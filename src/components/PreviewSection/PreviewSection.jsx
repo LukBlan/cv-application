@@ -1,16 +1,13 @@
 import './PreviewSection.css';
+import { ImageButton } from '../ImageButton/ImageButton';
 
 function PreviewSection({ toggleHide }) {
   return (
     <section className="preview-section">
       <nav className="preview-navbar">
-        <button className="return-button" onClick={toggleHide}>
-          <img src="/img/left-arrow.svg" alt="" />
-        </button>
+        <ImageButton className="return-button" src="/img/left-arrow.svg" alt="" onClick={toggleHide} />
         <p>Preview</p>
-        <button className="download-button">
-          <img src="/img/download.svg" alt="download resume" />
-        </button>
+        <ImageButton className="download-button" src="/img/download.svg" alt="download resume" />
       </nav>
     </section>
   );

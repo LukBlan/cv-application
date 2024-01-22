@@ -3,6 +3,7 @@ import { Form } from '../Form/Form';
 import { TabSection } from '../TabSection/TabSection';
 import { PreviewSection } from '../PreviewSection/PreviewSection';
 import './App.css';
+import { ImageButton } from '../ImageButton/ImageButton';
 
 function App() {
   const [hiddenButton, setHidden] = useState(false);
@@ -13,9 +14,7 @@ function App() {
   return (
     <>
       <Form />
-      <button className={buttonClass} onClick={toggleHide}>
-        <img src="/img/preview.svg" alt="" />
-      </button>
+      <ImageButton className={buttonClass} onClick={toggleHide} src="/img/preview.svg" alt="" />
       <main>
         <TabSection />
         <PreviewSection toggleHide={toggleHide} />

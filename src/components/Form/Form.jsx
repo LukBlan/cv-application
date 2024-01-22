@@ -1,12 +1,11 @@
 import './Form.css';
+import { ImageButton } from '../ImageButton/ImageButton';
 
 function Form() {
   return (
     <form className="download-bar">
       <input type="text" placeholder="Untitled Resume" className="download-file-name" />
-      <button className="download-button">
-        <img src="/img/download.svg" alt="download resume" />
-      </button>
+      <ImageButton className="download-button" src="/img/download.svg" alt="download resume" />
     </form>
   );
 }
