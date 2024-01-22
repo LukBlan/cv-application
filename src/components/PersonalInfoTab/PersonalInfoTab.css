@@ -1,0 +1,8 @@
+.personal-info-tab-section {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.input-section {
+  display: grid;
+}

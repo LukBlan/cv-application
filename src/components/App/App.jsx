@@ -8,7 +8,7 @@ import { ImageButton } from '../ImageButton/ImageButton';
 function App() {
   const [hiddenButton, setHidden] = useState(false);
   const buttonClass = `show-preview-button ${hiddenButton ? 'hide' : ''}`;
-  const cvSections = ['Person Info', 'Education', 'Employment', 'Skills', 'Languages'];
+  const cvSections = ['Education', 'Employment', 'Skills', 'Languages'];
   const toggleHide = () => setHidden(!hiddenButton);
 
   return (
