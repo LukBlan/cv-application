@@ -3,7 +3,7 @@ function PersonalInfoTab() {
     <div className="personal-info-tab-section">
       <div>
         <p>Photo</p>
-        <img src="/img/camera.svg" alt="" />
+        <img className="user-image" src="/img/camera.svg" alt="" />
       </div>
 
       <div className="name-info-section">

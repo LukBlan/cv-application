@@ -92,7 +92,6 @@ input::placeholder {
 
 .personal-info-tab-section {
   display: grid;
-  grid-template-columns: 1fr 3fr;
 }
 
 .input-section {
@@ -116,6 +115,7 @@ input::placeholder {
 .name-info-section {
   display: flex;
   gap: 15px;
+  flex-direction: column;
 }
 
 .preview-navbar {
@@ -132,6 +132,10 @@ input::placeholder {
 .tab-section {
   padding: 0 10px;
   overflow: auto;
+}
+
+.user-image {
+  min-width: 100px;
 }
 
 /* Buttons */
@@ -181,7 +185,13 @@ input::placeholder {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 425px) {
+  .personal-info-tab-section {
+    grid-template-columns: min-content 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
   .preview-section {
     display: block;
   }
