@@ -173,7 +173,7 @@ input::placeholder {
   border-color: var(--option-button-color);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .show-preview-button.hide ~ main > .preview-section {
     display: block;
     position: absolute;
