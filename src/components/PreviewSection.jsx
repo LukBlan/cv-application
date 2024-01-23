@@ -1,5 +1,4 @@
-import './PreviewSection.css';
-import { ImageButton } from '../ImageButton/ImageButton';
+import { ImageButton } from './ImageButton';
 
 function PreviewSection({ toggleHide }) {
   return (

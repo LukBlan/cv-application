@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import { Form } from '../Form/Form';
-import { TabSection } from '../TabSection/TabSection';
-import { PreviewSection } from '../PreviewSection/PreviewSection';
-import './App.css';
-import { ImageButton } from '../ImageButton/ImageButton';
+import { Form } from './Form';
+import { TabSection } from './TabSection';
+import { PreviewSection } from './PreviewSection';
+import { ImageButton } from './ImageButton';
 
 function App() {
   const [hiddenButton, setHidden] = useState(false);

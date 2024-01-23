@@ -1,6 +1,5 @@
-import './CvTab.css';
 import { useState } from 'react';
-import { ImageButton } from '../ImageButton/ImageButton';
+import { ImageButton } from './ImageButton';
 
 function CvTab({ name, children }) {
   const [open, setOpen] = useState(false);

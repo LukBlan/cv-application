@@ -1,6 +1,5 @@
-import { CvTab } from '../CvTab/CvTab';
-import './TabSection.css';
-import { PersonalInfoTab } from '../PersonalInfoTab/PersonalInfoTab';
+import { CvTab } from './CvTab';
+import { PersonalInfoTab } from './PersonalInfoTab';
 
 function TabSection({ cvSections }) {
   return (

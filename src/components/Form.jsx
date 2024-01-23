@@ -1,5 +1,4 @@
-import './Form.css';
-import { ImageButton } from '../ImageButton/ImageButton';
+import { ImageButton } from './ImageButton';
 
 function Form() {
   return (
