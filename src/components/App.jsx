@@ -15,7 +15,10 @@ function App() {
       <Form />
       <ImageButton className={buttonClass} onClick={toggleHide} src="/img/preview.svg" alt="" />
       <main>
-        <TabSection cvSections={cvSections} />
+        <div>
+          <TabSection cvSections={cvSections} />
+        </div>
+
         <PreviewSection toggleHide={toggleHide} />
       </main>
 
