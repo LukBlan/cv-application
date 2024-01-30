@@ -1,7 +1,7 @@
 function PersonalInfoTab() {
   return (
     <div className="personal-info-tab-section">
-      <div>
+      <div className="add-image-section">
         <p>Photo</p>
         <img className="user-image" src="/img/camera.svg" alt="" />
       </div>
