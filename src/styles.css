@@ -213,10 +213,6 @@ input::placeholder {
     grid-template-rows: min-content 1fr;
     position: absolute;
     animation: showFromLeft 0.5s forwards;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
   }
 }
 
@@ -247,10 +243,16 @@ input::placeholder {
 
 @keyframes showFromLeft {
   0% {
-    transform: translateX(200%);
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    left: 100%;
   }
 
   100% {
-    transform: translateX(0%);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
   }
 }
