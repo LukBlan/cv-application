@@ -6,18 +6,20 @@ import { ImageButton } from './ImageButton';
 
 function App() {
   const [hiddenButton, setHidden] = useState(false);
-  const [personInfo, setPersonInfo] = useState({ name: '', surname: '' });
+  const [personInfo, setPersonInfo] = useState({ name: '', surname: '', email: '' });
   const buttonClass = `show-preview-button ${hiddenButton ? 'hide' : ''}`;
   const cvSections = ['Education', 'Employment', 'Skills', 'Languages'];
 
   const toggleHide = () => setHidden(!hiddenButton);
   const changeName = (event) => setPersonInfo({ ...personInfo, name: event.target.value });
   const changeSurname = (event) => setPersonInfo({ ...personInfo, surname: event.target.value });
+  const changeEmail = (event) => setPersonInfo({ ...personInfo, email: event.target.value });
 
   const personObject = {
     personInfo,
     changeName,
     changeSurname,
+    changeEmail,
   };
 
   return (

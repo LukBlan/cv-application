@@ -1,7 +1,7 @@
 import { ImageButton } from './ImageButton';
 
 function PreviewSection({ toggleHide, personInfo }) {
-  const { name, surname } = personInfo;
+  const { name, surname, email } = personInfo;
   return (
     <section className="preview-section">
       <nav className="preview-navbar">
@@ -10,7 +10,8 @@ function PreviewSection({ toggleHide, personInfo }) {
         <ImageButton className="download-button" src="/img/download.svg" alt="download resume" />
       </nav>
       <div className="cv-section">
-        {`${name} ${surname}`}
+        <h2>{`${name} ${surname}`}</h2>
+        <p>{email}</p>
       </div>
     </section>
   );
