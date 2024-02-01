@@ -1,4 +1,5 @@
-function PersonalInfoTab() {
+function PersonalInfoTab({ personObject }) {
+  const { changeSurname, changeName, personInfo } = personObject;
   return (
     <div className="personal-info-tab-section">
       <div className="add-image-section">
@@ -9,12 +10,12 @@ function PersonalInfoTab() {
       <div className="name-info-section">
         <div className="input-section">
           <label htmlFor="name">Given Name </label>
-          <input name="name" />
+          <input name="name" onChange={changeName} value={personInfo.name} />
         </div>
 
         <div className="input-section">
-          <label htmlFor="surname">Family Name</label>
-          <input name="surname" />
+          <label htmlFor="surname"> Family Name </label>
+          <input name="surname" onChange={changeSurname} value={personInfo.surname} />
         </div>
 
       </div>
