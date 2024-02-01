@@ -7,6 +7,7 @@
 :root {
   --option-button-color: #6704c2;
   --gray-scale-0: #f5f5f5;
+  --cv-radius: 4px;
   --gap-small: 5px;
 }
 
@@ -160,13 +161,15 @@ input::placeholder {
   background-color: white;
   box-shadow: 0 2px 1px rgba(0,0,0,0.1);
   margin: 10px;
+  border-radius: 0 0 var(--cv-radius) var(--cv-radius);
 }
 
 .cv-header{
   background-color: #38384b;
   color: white;
   font-family: monospace;
-  padding: 4px;
+  padding: 8px;
+  border-radius: var(--cv-radius) var(--cv-radius) 0 0;
 }
 
 /* Buttons */
