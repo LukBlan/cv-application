@@ -33,11 +33,6 @@ main {
   overflow: auto;
 }
 
-.preview-section {
-  background-color: white;
-  display: none;
-}
-
 .hide {
   display: none;
 }
@@ -92,6 +87,18 @@ input::placeholder {
   color: white;
 }
 
+.tab-container {
+  overflow: auto;
+  overflow-x: visible;
+}
+
+.tab-section {
+  padding: 0 10px;
+  max-width: 750px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
 .personal-info-tab-section {
   display: grid;
   gap: 15px;
@@ -121,6 +128,23 @@ input::placeholder {
   flex-direction: column;
 }
 
+.add-image-section {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  gap: var(--gap-small);
+}
+
+.user-image {
+  background-color: var(--gray-scale-0);
+  height: 100%;
+  min-height: 100px;
+}
+
+.preview-section {
+  background-color: white;
+  display: none;
+}
+
 .preview-navbar {
   font-weight: bold;
   display: flex;
@@ -132,23 +156,9 @@ input::placeholder {
   align-items: center;
 }
 
-.tab-section {
-  padding: 0 10px;
-  max-width: 750px;
-  margin: 0 auto;
-  overflow: auto;
-}
-
-.add-image-section {
-  display: grid;
-  grid-template-rows: min-content 1fr;
-  gap: var(--gap-small);
-}
-
-.user-image {
-  background-color: var(--gray-scale-0);
-  height: 100%;
-  min-height: 100px;
+.cv-section {
+  border: 1px solid black;
+  margin: 10px;
 }
 
 /* Buttons */
@@ -188,7 +198,8 @@ input::placeholder {
 
 @media (max-width: 1024px) {
   .show-preview-button.hide ~ main > .preview-section {
-    display: block;
+    display: grid;
+    grid-template-rows: min-content 1fr;
     position: absolute;
     animation: showFromLeft 0.5s forwards;
     top: 0;
@@ -206,7 +217,7 @@ input::placeholder {
 
 @media (min-width: 1024px) {
   .preview-section {
-    display: block;
+    display: grid;
   }
 
   .preview-navbar {

@@ -8,6 +8,9 @@ function PreviewSection({ toggleHide }) {
         <p>Preview</p>
         <ImageButton className="download-button" src="/img/download.svg" alt="download resume" />
       </nav>
+      <div className="cv-section">
+        test
+      </div>
     </section>
   );
 }
