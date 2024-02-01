@@ -10,8 +10,11 @@ function PreviewSection({ toggleHide, personInfo }) {
         <ImageButton className="download-button" src="/img/download.svg" alt="download resume" />
       </nav>
       <div className="cv-section">
-        <h2>{`${name} ${surname}`}</h2>
-        <p>{email}</p>
+        <header className="cv-header">
+          <h2>{`${name} ${surname}`}</h2>
+          <p>{email}</p>
+        </header>
+
       </div>
     </section>
   );

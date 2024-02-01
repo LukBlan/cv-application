@@ -141,7 +141,7 @@ input::placeholder {
 }
 
 .preview-section {
-  background-color: white;
+  background-color: #eee;
   display: none;
 }
 
@@ -157,8 +157,16 @@ input::placeholder {
 }
 
 .cv-section {
-  border: 1px solid black;
+  background-color: white;
+  box-shadow: 0 2px 1px rgba(0,0,0,0.1);
   margin: 10px;
+}
+
+.cv-header{
+  background-color: #38384b;
+  color: white;
+  font-family: monospace;
+  padding: 4px;
 }
 
 /* Buttons */
