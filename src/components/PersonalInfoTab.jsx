@@ -1,3 +1,5 @@
+import { Input } from './Input.jsx';
+
 function PersonalInfoTab({ personObject }) {
   const {
     changeSurname, changeName, changeEmail, personInfo,
@@ -10,21 +12,9 @@ function PersonalInfoTab({ personObject }) {
       </div>
 
       <div className="name-info-section">
-        <div className="input-section">
-          <label htmlFor="name">Given Name </label>
-          <input name="name" onChange={changeName} value={personInfo.name} />
-        </div>
-
-        <div className="input-section">
-          <label htmlFor="surname"> Family Name </label>
-          <input name="surname" onChange={changeSurname} value={personInfo.surname} />
-        </div>
-
-        <div className="input-section">
-          <label htmlFor="email"> Email </label>
-          <input name="email" onChange={changeEmail} value={personInfo.email} />
-        </div>
-
+        <Input inputName="name" onChange={changeName} value={personInfo.name} text="First Name" />
+        <Input inputName="surname" onChange={changeSurname} value={personInfo.surname} text="Family Name" />
+        <Input inputName="email" onChange={changeEmail} value={personInfo.email} text="Email" />
       </div>
 
     </div>
