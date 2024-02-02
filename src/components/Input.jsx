@@ -8,7 +8,7 @@ function Input({
         {text}
         {' '}
       </label>
-      <input name={inputName} onChange={onChange} value={value} />
+      <input id={inputName} name={inputName} onChange={onChange} value={value} />
     </div>
   );
 }
