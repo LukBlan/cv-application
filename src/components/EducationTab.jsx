@@ -1,21 +1,23 @@
-import { EducationForm } from './EducationForm.jsx';
+import { useState } from 'react';
+import { EducationForm } from './EducationForm';
+import { EducationElement } from './EducationElement';
 
 function EducationTab({ personObject }) {
   const { education } = personObject;
   const emptyEducation = education.length === 0;
+  const [currentEducation, setCurrentEducation] = useState({ name: '', city: '', school: ' ' });
+  const changeEducation = (newEducation) => setCurrentEducation(newEducation);
 
   if (emptyEducation) {
     return (
       <>
-        <EducationForm />
+        <EducationForm currentEducation={currentEducation} changeEducation={changeEducation} />
         <button>Add Education</button>
       </>
     );
   }
 
-  return (
-    <h1>Test</h1>
-  );
+  return education.map((element) => <EducationElement element={element} />);
 }
 
 export { EducationTab };

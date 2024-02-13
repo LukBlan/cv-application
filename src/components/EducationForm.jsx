@@ -1,50 +1,19 @@
-function EducationForm() {
-  const yearsAmount = 100;
-  const months = [
-    'January', 'February', 'March',
-    'April', 'May', 'June', 'July', 'August', 'September',
-    'October', 'November', 'December',
-  ];
-  const currentYear = new Date().getFullYear();
-  const firstYear = currentYear - yearsAmount;
-  const yearsArray = new Array(yearsAmount).fill(1).map((value, index) => firstYear + index + 1).reverse();
+import { Input } from './Input';
+import { SelectInput } from './SelectInput';
 
+function EducationForm({ currentEducation, changeEducation }) {
+  const changeEducationName = (event) => changeEducation({ ...currentEducation, name: event.target.value });
+  const changeCityName = (event) => changeEducation({ ...currentEducation, city: event.target.value });
+  const changeSchool = (event) => changeEducation({ ...currentEducation, school: event.target.value });
+
+  console.log(currentEducation);
   return (
     <form>
-      <div>
-        <label>Education</label>
-        <input />
-      </div>
-
-      <div>
-        <label> School </label>
-        <input />
-      </div>
-
-      <div>
-        <label> City </label>
-        <input />
-      </div>
-
-      <div>
-        <label>Start Date</label>
-        <select>
-          {months.map((month) => <option value={month}>{month}</option>)}
-        </select>
-        <select>
-          {yearsArray.map((year) => <option value={year}>{year}</option>)}
-        </select>
-      </div>
-
-      <div>
-        <label>End Date</label>
-        <select>
-          {months.map((month) => <option value={month}>{month}</option>)}
-        </select>
-        <select>
-          {yearsArray.map((year) => <option value={year}>{year}</option>)}
-        </select>
-      </div>
+      <Input onChange={changeEducationName} inputName="educationName" value={currentEducation.name} text="Education" />
+      <Input onChange={changeCityName} inputName="cityName" value={currentEducation.city} text="City" />
+      <Input onChange={changeSchool} inputName="schoolName" value={currentEducation.school} text="School" />
+      <SelectInput />
+      <SelectInput />
 
       <div>
         <label>Description</label>
