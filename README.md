@@ -1,1 +1,1 @@
-# [Cv Application](https://lukblan-cv-application.netlify.app)
+# [Cv Application](https://cv-application-dxy.pages.dev/)
